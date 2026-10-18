@@ -52,6 +52,27 @@ const experience = [
     ],
   },
 
+  
+  {
+    title: "Uptrail",
+    position: "Data Analyst Internship Programme",
+    time: "10/2025 - 12/2025",
+    location: "Remote",
+    description:
+      "Completed a Data Analyst Internship Programme, applying Python to data cleaning, exploratory analysis, customer behaviour analysis and churn prediction. Gained knowledge of data visualisation, business intelligence dashboards and AI-assisted analytics.",
+    tech: [
+      "Python",
+      "Data Analysis",
+      "Data Cleaning",
+      "EDA",
+      "Predictive Modelling",
+      "Data Visualisation",
+      "Business Intelligence",
+    ],
+    certificate: "/project-imgs/uptrail-data-analyst-certificate.png",
+  },
+
+
   {
     title: "GRD Labelle",
     position: "Software Engineering Intern",
@@ -69,7 +90,6 @@ const experience = [
     ],
   },
 
-
   {
     title: "E-commerce",
     position: "Self-Employed",
@@ -77,6 +97,12 @@ const experience = [
     location: "Blida, Algeria",
     description:
       "Managed an e-commerce business through Facebook and social media advertising during the COVID-19 pandemic. Oversaw sales, marketing, and client relations independently.",
-    tech: ["E-commerce", "Social Media Marketing", "Business Management", "Customer Engagement", "Entrepreneurship"],
+    tech: [
+      "E-commerce",
+      "Social Media Marketing",
+      "Business Management",
+      "Customer Engagement",
+      "Entrepreneurship",
+    ],
   },
 ];
