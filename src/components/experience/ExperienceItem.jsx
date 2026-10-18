@@ -88,30 +88,31 @@ export const ExperienceItem = ({
           </Reveal>
         </div>
 
+        
         {certificate && (
           <div className="w-full shrink-0 sm:w-52 md:w-60">
-            <Reveal>
-              <button
-                ref={triggerRef}
-                type="button"
-                onClick={() => setShowCertificate(true)}
-                aria-label={`Enlarge ${title} certificate`}
-                aria-haspopup="dialog"
-                className="group block w-full cursor-zoom-in rounded-xl text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-indigo-400"
-              >
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-zinc-700 bg-white shadow-lg transition-all duration-300 group-hover:border-indigo-400 group-hover:shadow-xl group-hover:shadow-indigo-500/20">
-                  <Image
-                    src={certificate}
-                    alt={`${title} ${position} certificate`}
-                    fill
-                    sizes="(max-width: 640px) 100vw, 240px"
-                    className="object-contain transition-transform duration-300 group-hover:scale-[1.03]"
-                  />
-                </div>
-              </button>
-            </Reveal>
+            <button
+              ref={triggerRef}
+              type="button"
+              onClick={() => setShowCertificate(true)}
+              aria-label={`Enlarge ${title} certificate`}
+              aria-haspopup="dialog"
+              className="group block w-full cursor-zoom-in overflow-hidden rounded-xl border border-zinc-700 bg-white shadow-lg transition-all duration-300 hover:border-indigo-400 hover:shadow-xl hover:shadow-indigo-500/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-indigo-400"
+          >
+              <Image
+                src={certificate}
+                alt={`${title} ${position} certificate`}
+                width={600}
+                height={450}
+                unoptimized
+                sizes="(max-width: 640px) 100vw, 240px"
+                className="block h-auto w-full object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+              />
+            </button>
           </div>
         )}
+
+        
       </div>
 
       {/* Skills */}
@@ -151,16 +152,19 @@ export const ExperienceItem = ({
                 ×
               </button>
 
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-white">
+              
+              <div className="w-full overflow-hidden rounded-lg bg-zinc-900">
                 <Image
                   src={certificate}
                   alt={`${title} certificate enlarged`}
-                  fill
-                  priority
+                  width={1200}
+                  height={900}
+                  unoptimized
                   sizes="(max-width: 768px) 100vw, 672px"
-                  className="object-contain"
+                  className="block h-auto w-full object-contain"
                 />
               </div>
+
             </div>
           </div>,
           document.body

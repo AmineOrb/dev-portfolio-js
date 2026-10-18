@@ -69,7 +69,7 @@ const experience = [
       "Data Visualisation",
       "Business Intelligence",
     ],
-    certificate: "/project-imgs/uptrail-data-analyst-certificate.png",
+    certificate: "/project-imgs/uptrailCertificate.png",
   },
 
 
